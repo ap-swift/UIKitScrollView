@@ -20,7 +20,7 @@ class HeaderView: UITableViewHeaderFooterView {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 24, weight: .semibold)
-        label.textColor = .blue
+        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -38,12 +38,12 @@ class HeaderView: UITableViewHeaderFooterView {
 
 
     private func setupViews() {
-        contentView.backgroundColor = .yellow
+        contentView.backgroundColor = .white
 
         contentView.addSubview(titleLabel)
 
         let constraints = [
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
+            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12),
             titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12)

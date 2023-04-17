@@ -23,7 +23,7 @@ class TableViewController: UIViewController {
 
     func setupTableView() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = .yellow
+        tableView.backgroundColor = .white
         tableView.dataSource = self
         tableView.delegate = self // для расширения
 //         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellTypeIdentifier")

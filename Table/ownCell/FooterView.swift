@@ -17,7 +17,7 @@ class FooterView: UITableViewHeaderFooterView {
 
     private let footerLabel: UILabel = {
         let footer = UILabel()
-        footer.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+        footer.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         footer.textColor = .black
         footer.translatesAutoresizingMaskIntoConstraints = false
         return footer
@@ -35,7 +35,7 @@ class FooterView: UITableViewHeaderFooterView {
 
 
     private func setupViews() {
-        contentView.backgroundColor = .yellow
+        contentView.backgroundColor = .green
 
         contentView.addSubview(footerLabel)
 
@@ -43,7 +43,7 @@ class FooterView: UITableViewHeaderFooterView {
             footerLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 6),
             footerLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 6),
             footerLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -6),
-            footerLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -6)
+            footerLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0)
         ]
 
         NSLayoutConstraint.activate(constraints)
